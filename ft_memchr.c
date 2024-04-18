@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:06:54 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/16 10:10:30 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/17 11:08:08 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 /*int	main(void)
 {
-	printf ("Se ha encontrado: %p\n", ft_memchr("12345~ª/aSdF", 'A', 25));
+	printf ("Encontrado: %p\n", ft_memchr("12345~ª/aSdF", 'A', 25));
 	return (0);
 }
 */

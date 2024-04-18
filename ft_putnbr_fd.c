@@ -1,22 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 10:17:26 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/17 11:09:24 by igchurru         ###   ########.fr       */
+/*   Created: 2024/04/17 12:46:27 by igchurru          #+#    #+#             */
+/*   Updated: 2024/04/17 16:12:35 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+void	ft_putnbr_fd(int n, int fd)
 {
-	if ('a' <= c && c <= 'z')
+	char	*an;
+
+	if (0 <= fd && n)
 	{
-		c = c - 32;
-		return (c);
+		an = ft_itoa(n);
+		write (fd, an, ft_strlen(an));
 	}
-	else
-		return (c);
+}
+
+int	main(void)
+{
+	ft_putnbr_fd(123, 1);
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 12:25:30 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/15 17:39:35 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/17 13:09:08 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,12 @@ int	ft_atoi(const char *str)
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
+		{
 			sign = (sign * -1);
-	str++;
+			str++;
+		}
+		else
+			str++;
 	}
 	while ('0' <= *str && *str <= '9')
 	{
@@ -32,3 +36,8 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * result);
 }
+
+/* int	main(void)
+{
+
+} */

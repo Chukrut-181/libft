@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 11:34:20 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/16 18:08:17 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/17 11:06:01 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,7 @@ char	**ft_split(char const *s, char c)
 	return (array);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char const	*s;
 	char		c;
@@ -120,4 +120,4 @@ int	main(void)
 		free(array[i]);
 		i++;
 	}
-}
+} */
