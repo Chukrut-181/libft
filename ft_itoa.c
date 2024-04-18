@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 18:26:18 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/17 16:09:23 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/18 13:04:40 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ static size_t	ft_int_len(int n)
 static char	*ft_specialcase(int n)
 {
 	if (n == -2147483648)
-		return ("-2147483648");
+		return (ft_strdup("-2147483648"));
 	else
-		return ("0");
+		return (ft_strdup("0"));
 }
 
 char	*ft_itoa(int n)
@@ -53,25 +53,24 @@ char	*ft_itoa(int n)
 	size_t	i;
 
 	if (n == -2147483648 || n == 0)
-	{
-		str = ft_specialcase(n);
-		return (str);
-	}
-	len = ft_int_len(n) + 1;
+		return (ft_specialcase(n));
+	len = ft_int_len(n);
 	str = ft_malloc(len);
+	if (str == NULL)
+		return (NULL);
 	if (n < 0)
 	{
 		str[0] = '-';
 		n = -n;
 	}
-	i = len - 2;
+	i = len - 1;
 	while (n)
 	{
 		str[i] = (n % 10) + '0';
 		n = n / 10;
 		i--;
 	}
-	str[len - 1] = '\0';
+	str[len] = '\0';
 	return (str);
 }
 
@@ -79,8 +78,8 @@ char	*ft_itoa(int n)
 {
 	char	*result;
 
-	result = ft_itoa(-1234);
+	result = ft_itoa(0);
 	printf("%s\n", result);
-	free(result);
+	//free(result);
 	return (0);
 } */

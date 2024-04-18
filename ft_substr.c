@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 09:45:15 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/16 10:24:10 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/18 15:08:25 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
+
+/* int	main(void)
+{
+	char	*test;
+	test = ft_substr("Quousque tandem abutere... ?", 4, 15);
+	printf ("%s\n", test);
+	return (0);
+}
+ */
