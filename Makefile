@@ -19,9 +19,10 @@ ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 # OBJS: Variable que genera una lista de archivos objeto (.o)                  #
 #       a partir de los archivos fuente (.c).                                  #
 OBJS = $(SRCS:.c=.o)
+BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
+ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 # COLORS: Definen secuencias de escape ANSI para colores en la terminal        #
-BONUS = ft_lstnew.c
-BONUS_OBJS = $(BONUS:.c=.o)
 DEF_COLOR = \033[0;39m
 GRAY = \033[0;90m
 RED = \033[0;91m
@@ -54,7 +55,7 @@ all: $(NAME)
 # clean: Esta regla elimina los archivos objeto (.o)                           #
 #        generados durante la compilación.                                     #
 clean:
-	@$(RM) $(OBJS)
+	@$(RM) $(OBJS) $(BONUS_OBJS)
 # fclean: Esta regla elimina la biblioteca (libft.a)                           #
 #         y los archivos objeto (.o).                                          #
 fclean: clean
@@ -63,10 +64,12 @@ fclean: clean
 #     Cuando se ejecuta make re, se limpia la compilación anterior             #
 #     y se crea la biblioteca nuevamente.                                      #
 re: fclean all
+bonus: $(OBJS) $(BONUS_OBJS)
+	@ar crs $(NAME) $(OBJS) $(BONUS_OBJS)
 # **************************************************************************** #
 # **************************************************************************** #
 # PSEUDO-OBJETIVOS                                                             #
 # PHONY: Indica que all, clean, fclean y re son pseudo-objetivos,              #
 #        no archivos reales.                                                   #
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
 # **************************************************************************** #

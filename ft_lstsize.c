@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/09 09:48:59 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/19 15:54:38 by igchurru         ###   ########.fr       */
+/*   Created: 2024/04/19 14:58:16 by igchurru          #+#    #+#             */
+/*   Updated: 2024/04/19 15:53:07 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+int	ft_lstsize(t_list *lst)
 {
-	char	*ucd;
-	char	*ucs;
+	int	list_size;
 
-	if (src == dst)
-		return (dst);
-	ucd = (char *)dst;
-	ucs = (char *)src;
-	if (ucs <= ucd)
+	list_size = 0;
+	while (lst)
 	{
-		while (0 < len)
-		{
-			len--;
-			ucd[len] = ucs[len];
-		}
+		list_size++;
+		lst = lst->next;
 	}
-	else
-		ft_memcpy(dst, src, len);
-	return (dst);
+	return (list_size);	
 }
