@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 15:00:41 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/10 14:56:26 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 11:09:11 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,20 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
+
+/* int	main(void)
+{
+	char	*test_str;
+
+	test_str = (char *)malloc(26 * sizeof(char));
+	ft_strlcpy(test_str, "Abracadabra pata de cabra!", 27);
+	printf ("test_str inicial: %s\n", test_str);
+	ft_bzero(test_str, 10);
+	printf ("test_str final: %s\n", test_str);
+	free(test_str);
+	return (0);
+} */
+
+/* ft_bzero toma un bloque de memoria especificado por s y n, y lo
+inicializa estableciendo cada uno de sus bytes a cero. 
+(Para pruebas compilar con ft_strcpy.c y ft_strlen.c) */

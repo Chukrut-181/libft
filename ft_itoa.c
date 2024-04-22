@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 18:26:18 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/18 13:04:40 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 11:56:26 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,16 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	char	*result;
 
-	result = ft_itoa(0);
+	result = ft_itoa(123456789);
 	printf("%s\n", result);
-	//free(result);
+	free(result);
 	return (0);
-} */
+}
+
+/* ft_itoa convierte un número entero en una cadena de caracteres,
+manejando casos especiales y números negativos, y asignando memoria
+dinámica para la cadena resultante. */

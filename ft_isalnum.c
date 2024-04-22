@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:31:02 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/10 14:41:48 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 11:35:52 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,14 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+
+/* int	main(void)
+{
+	if (ft_isalnum('7'))
+		printf("El carácter SÍ es alfanumérico\n");
+	else
+		printf("El carácter NO es alfanumérico\n");
+	return (0);
+} */
+
+/* ft_isalnum verifica si un carácter es alfanumérico. */
