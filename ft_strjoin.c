@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 10:06:24 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/16 10:56:01 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:51:35 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,3 +40,18 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	return (NULL);
 }
+
+/* int	main(void)
+{
+	char	*test_str;
+
+	test_str = ft_strjoin("QWERTY", "ASDFGH");
+	printf ("%s\n", test_str);
+	free (test_str);
+	return (0);
+} */
+
+/* ft_strjoin une las dos cadenas s1 y s2 en una nueva cadena, reservando
+memoria para la cadena resultante. Copia s1 y s2 en s3, y agrega un
+carácter nulo al final. Si alguna cadena de entrada es nula o si la
+asignación de memoria falla, la función devuelve NULL. */

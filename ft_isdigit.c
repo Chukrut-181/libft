@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:21:23 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 11:49:40 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 12:44:40 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 int	ft_isdigit(int c)
 {
-	if (48 <= c && c <= 57)
+	if ('0' <= c && c <= '9')
 		return (1);
-	else
-		return (0);
+	return (0);
 }
 
 /* int	main(void)

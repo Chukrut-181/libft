@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:07:02 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/15 11:08:10 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:02:21 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,13 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	return (slen);
 }
 
-/*
-int	main(void)
+/* int	main(void)
 {
-	char	*d;
+	char	*test_d;
 	int		i;
 
-	d = (char *)malloc(20 * 1);
-	if (d == NULL)
+	test_d = (char *)malloc(20 * 1);
+	if (test_d == NULL)
 	{
 		write(1, "Memory allocation failed\n", 26);
 		return (0);
@@ -52,13 +51,17 @@ int	main(void)
 	i = 0;
 	while (i < 5)
 	{
-		d[i] = '0';
+		test_d[i] = (char)i + '0';
 		i++;
 	}
-	printf ("String original: %s\n", d);
-	printf ("Valor retornado: %zu\n", ft_strlcat(d, "12345", 10));
-	printf ("String final: %s\n", d);
-	free (d);
+	printf ("String original: %s\n", test_d);
+	printf ("Valor retornado: %zu\n", ft_strlcat(test_d, "ASDFGH", 7));
+	printf ("String final: %s\n", test_d);
+	free (test_d);
 	return (0);
-}
-*/
+} */
+
+/* ft_strlcat concatena src a dest asegurando que la longitud de dest
+no exceda dstsize - 1 caracteres y añade un carácter nulo (\0) al final
+de dest. Devuelve la longitud combinada de dest y src, incluso si no
+toda la cadena fuente se copió a dest debido a limitaciones de tamaño. */

@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 14:25:21 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/10 14:50:01 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 12:53:52 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+/* ft_memset establece los primeros len bytes del bloque de memoria apuntado
+por b al valor c (convertido a unsigned char).
+La función devuelve b para indicar que el llenado se ha completado. */

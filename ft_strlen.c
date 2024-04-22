@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:56:49 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/17 09:58:11 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:07:21 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,8 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (*s)
-	{
+	while (s[i] != '\0')
 		i++;
-		s++;
-	}
 	return (i);
 }
 
@@ -34,3 +31,8 @@ size_t	ft_strlen(const char *s)
 	printf ("len = %zu\n", len);
 	return (0);
 } */
+
+/* ft_strlen calcula la longitud de la cadena s al recorrer cada carácter
+de la cadena hasta que se encuentra con un carácter nulo (\0), que marca
+el final de la cadena. La longitud se cuenta usando la variable i y se
+devuelve una vez que se completa el recorrido. */

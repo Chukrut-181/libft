@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:11:42 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/17 13:10:39 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:09:50 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	fstr[i] = '\0';
 	return (fstr);
 }
+
+/* ft_strmapi aplica la función (f) a cada carácter de la cadena
+de entrada (s) y devuelve una nueva cadena (fstr) que contiene los
+caracteres transformados. */

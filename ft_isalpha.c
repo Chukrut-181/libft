@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:06:48 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 11:39:37 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 12:44:25 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ int	ft_isalpha(int c)
 {
 	if (('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
 
 /* int	main(void)

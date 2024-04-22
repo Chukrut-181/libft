@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:46:27 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/18 12:55:20 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:53:31 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,7 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putnbr_fd(0, 1);
 	return (0);
 } */
+
+/* ft_putnbr_fd escribe un número entero n a un archivo o dispositivo
+identificado por el descriptor de archivo fd. Utiliza recursión para
+escribir números enteros con más de un dígito. */

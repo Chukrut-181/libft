@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:01:53 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/15 11:17:41 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:04:16 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (slen);
 }
 
-/*int	main(void)
+/* int	main(void)
 {
 	char	*d;
 	int		i;
@@ -52,5 +52,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	printf ("String final: %s\n", d);
 	free (d);
 	return (0);
-}
-*/
+} */
+
+/* ft_strlcpy copia src a dst hasta dstsize - 1 caracteres o hasta el final
+de src, lo que ocurra primero. La cadena destino se termina con un carácter
+nulo (\0). La función devuelve la longitud de la cadena fuente (slen) como
+un indicador de cuánto se habría copiado si no hubiera restricciones
+de tamaño. */

@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:43:56 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 11:52:08 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 12:44:57 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ int	ft_isprint(int c)
 {
 	if (32 <= c && c <= 126)
 		return (1);
-	else
-		return (0);
+	return (0);
 }
 
 /* int	main(void)

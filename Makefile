@@ -1,5 +1,3 @@
-# **************************************************************************** #
-# VARIABLES                                                                    #
 # NAME: Define el nombre de la biblioteca que se creará (libft.a).             #
 NAME = libft.a
 # CC: Especifica el compilador a usar (cc).                                   #
@@ -40,32 +38,32 @@ WHITE = \033[0;97m
 #			La acción @ar crs $(NAME) $(OBJS) utiliza el comando ar para crear #
 #			un archivo de biblioteca estática (lib.a) con los archivos objeto  #
 #			especificados.                                                     #
+all: $(NAME)
 $(NAME) : $(OBJS)
-	@ar crs $(NAME) $(OBJS)
+	ar crs $(NAME) $(OBJS)
 # all: Esta regla es un alias para la regla $(NAME).                           #
 #      Cuando se ejecuta make all, se crea la biblioteca.                      #
-all: $(NAME)
 # %.o : %.c: Esta regla indica cómo compilar cada archivo fuente (.c)          #
 #            en un archivo objeto (.o).                                        #
 #            La acción @$(CC) $(CCFLAGS) -c -o $@ $< utiliza el compilador gcc #
 #            con las opciones -Wall -Wextra -Werror para compilar el archivo   #
 #            fuente ($<) y generar el archivo objeto ($@).                     #
 %.o : %.c
-	@$(CC) $(CCFLAGS) -c -o $@ $<
+	$(CC) $(CCFLAGS) -c -o $@ $<
 # clean: Esta regla elimina los archivos objeto (.o)                           #
 #        generados durante la compilación.                                     #
 clean:
-	@$(RM) $(OBJS) $(BONUS_OBJS)
+	$(RM) $(OBJS) $(BONUS_OBJS)
 # fclean: Esta regla elimina la biblioteca (libft.a)                           #
 #         y los archivos objeto (.o).                                          #
 fclean: clean
-	@rm -f $(NAME)
+	rm -f $(NAME)
 # re: Esta regla es un alias para la secuencia fclean all.                     #
 #     Cuando se ejecuta make re, se limpia la compilación anterior             #
 #     y se crea la biblioteca nuevamente.                                      #
 re: fclean all
 bonus: $(OBJS) $(BONUS_OBJS)
-	@ar crs $(NAME) $(OBJS) $(BONUS_OBJS)
+	ar crs $(NAME) $(OBJS) $(BONUS_OBJS)
 # **************************************************************************** #
 # **************************************************************************** #
 # PSEUDO-OBJETIVOS                                                             #

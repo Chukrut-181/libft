@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 09:45:15 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/18 15:08:25 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 15:44:10 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /* int	main(void)
 {
-	char	*test;
-	test = ft_substr("Quousque tandem abutere... ?", 4, 15);
-	printf ("%s\n", test);
+	char	*test_str;
+	test_str = ft_substr("Quousque tandem abutere, Catilina, ...?", 5, 15);
+	printf ("%s\n", test_str);
+	free (test_str);
 	return (0);
-}
- */
+} */
+
+/* ft_substr extrae una subcadena de s comenzando en start y con una
+longitud de len, devolviendo la subcadena en una nueva cadena de caracteres. */

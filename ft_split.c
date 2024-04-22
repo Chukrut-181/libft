@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 11:34:20 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/17 11:06:01 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/22 14:33:15 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,7 +96,7 @@ char	**ft_split(char const *s, char c)
 	char	**array;
 
 	num_words = count_words(s, c);
-	array = malloc(sizeof(char *) * (num_words + 1));
+	array = malloc((num_words + 1) * sizeof(char *));
 	if (array == NULL)
 		return (NULL);
 	array = fill_words(array, s, c);
@@ -110,7 +110,7 @@ char	**ft_split(char const *s, char c)
 	char		**array;
 	int			i;
 
-	s = "33   qwe  33 ¨^~~ ~~  33 123   34   536  78 ";
+	s = "123456378339 erg4rgh 3 grwgwrt38";
 	c = '3';
 	array = ft_split(s, c);
 	i = 0;
@@ -121,3 +121,7 @@ char	**ft_split(char const *s, char c)
 		i++;
 	}
 } */
+
+/* ft_split divide la cadena s en palabras basadas en el carácter
+delimitador c y devuelve un array de punteros a cadenas que
+representan las palabras separadas. */
