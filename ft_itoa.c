@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 18:26:18 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 15:51:50 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/23 12:03:07 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,5 @@ char	*ft_itoa(int n)
 
 /* ft_itoa convierte un número entero en una cadena de caracteres,
 manejando casos especiales y números negativos, y asignando memoria
-dinámica para la cadena resultante. */
+dinámica para la cadena resultante. Devuelve un puntero a la cadena
+resultante. */

@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 15:09:54 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/19 14:06:38 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/23 11:41:24 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,8 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
+
+/* ft_lstnew crea un nuevo nodo para una lista enlazada, asigna el
+contenido pasado como argumento a este nodo, inicializa su campo next a NULL
+y devuelve el puntero al nuevo nodo.
+Si la asignación de memoria falla, devuelve NULL. */

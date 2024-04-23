@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 15:56:16 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/19 16:14:17 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/23 11:51:40 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,8 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+
+/* ft_lstlast recorre la lista enlazada desde el nodo inicial hasta llegar
+al último nodo (donde lst->next es NULL) y devuelve un puntero a ese nodo.
+Si la lista está vacía (es decir, lst es NULL), la función devuelve NULL
+para indicar que no hay último nodo. */
