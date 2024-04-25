@@ -6,22 +6,11 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 18:26:18 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/23 12:03:07 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/24 12:14:23 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static char	*ft_malloc(size_t s)
-{
-	char	*mem;
-
-	mem = (char *)malloc((s + 1) * sizeof(char));
-	if (mem == NULL)
-		return (NULL);
-	else
-		return (mem);
-}
 
 static size_t	ft_int_len(int n)
 {
@@ -55,7 +44,7 @@ char	*ft_itoa(int n)
 	if (n == -2147483648 || n == 0)
 		return (ft_specialcase(n));
 	len = ft_int_len(n);
-	str = ft_malloc(len);
+	str = (char *)malloc((len + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 	if (n < 0)

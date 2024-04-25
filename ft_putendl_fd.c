@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:32:59 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 12:59:26 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/25 13:47:06 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (0 <= fd)
-	{
-		write (fd, s, ft_strlen(s));
-		write (fd, "\n", 1);
-	}
+	if (s == NULL || fd < 0)
+		return ;
+	write (fd, s, ft_strlen(s));
+	write (fd, "\n", 1);
 }
 
 /* int	main(void)

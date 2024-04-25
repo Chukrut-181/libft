@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:27:42 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 13:04:59 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/25 13:49:45 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (0 <= fd)
-		write (fd, s, ft_strlen(s));
+	if (s == NULL || fd < 0)
+		return ;
+	write (fd, s, ft_strlen(s));
 }
 
 /* ft_putstr_fd escribe la cadena de caracteres s al archivo o dispositivo

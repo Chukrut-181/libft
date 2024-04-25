@@ -5,123 +5,96 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/16 11:34:20 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 14:33:15 by igchurru         ###   ########.fr       */
+/*   Created: 2024/04/25 11:28:23 by igchurru          #+#    #+#             */
+/*   Updated: 2024/04/25 14:08:30 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_wordlen(char const *s, char c)
+static char	**ft_freeall(char ***frags, unsigned int k)
 {
-	int	len;
+	unsigned int	i;
+	char			**tofree;
+
+	tofree = *frags;
+	i = 0;
+	while (i < k && tofree[i])
+	{
+		free (tofree[i]);
+		i++;
+	}
+	free (tofree);
+	return (NULL);
+}
+
+static size_t	ft_wordlen(const char *word, char c)
+{
+	size_t	len;
 
 	len = 0;
-	while (*s && *s == c)
-		s++;
-	while (*s && *s != c)
-	{
+	while (word[len] && word[len] != c)
 		len++;
-		s++;
-	}
 	return (len);
 }
 
-static char	*ft_word_dupe(char const *s, char c)
+static unsigned int	ft_count_frags(const char *s, char c)
 {
-	int		i;
-	int		len;
-	char	*word;
+	unsigned int	count;
 
-	i = 0;
-	len = ft_wordlen(s, c);
-	word = malloc(sizeof(char) * (len + 1));
-	if (word == NULL)
-		return (NULL);
-	while (s[i] && i < len)
+	count = 0;
+	while (*s)
 	{
-		word[i] = s[i];
-		i++;
-	}
-	word[i] = '\0';
-	return (word);
-}
-
-static int	count_words(char const *s, char c)
-{
-	int	i;
-	int	num_words;
-
-	i = 0;
-	num_words = 0;
-	while (s[i] && s[i] == c)
-		i++;
-	while (s[i])
-	{
-		num_words++;
-		while (s[i] && s[i] != c)
-			i++;
-		while (s[i] && s[i] == c)
-			i++;
-	}
-	return (num_words);
-}
-
-static char	**fill_words(char **array, char const *s, char c)
-{
-	int	i;
-	int	index;
-
-	i = 0;
-	index = 0;
-	while (s[i])
-	{
-		if (s[i] != c)
+		if (*s != c)
 		{
-			array[index] = ft_word_dupe(s + i, c);
-			index++;
-			while (s[i] && s[i] != c)
-				i++;
+			count++;
+			s++;
 		}
-		else if (s[i] == c)
-			i++;
+		while (*s != c)
+			s++;
+		while (*s == c)
+			s++;
 	}
-	array[index] = NULL;
-	return (array);
+	return (count);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int		num_words;
-	char	**array;
+	char			**frag;
+	unsigned int	index;
+	unsigned int	k;
 
-	num_words = count_words(s, c);
-	array = malloc((num_words + 1) * sizeof(char *));
-	if (array == NULL)
+	frag = malloc((ft_count_frags(s, c) + 1) * sizeof(char *));
+	if (!frag)
 		return (NULL);
-	array = fill_words(array, s, c);
-	return (array);
+	index = 0;
+	k = 0;
+	while (s[index] == c)
+		index++;
+	while (s[index])
+	{
+		frag[k] = ft_substr(s, index, ft_wordlen(s + index, c));
+		if (!frag[k])
+			return (ft_freeall(&frag, k));
+		k++;
+		index = index + ft_wordlen(s + index, c);
+		while (s[index] == c)
+			index++;
+	}
+	frag[k] = NULL;
+	return (frag);
 }
 
-/* int	main(void)
+/* int	main(int argc, char **argv)
 {
-	char const	*s;
-	char		c;
-	char		**array;
-	int			i;
-
-	s = "123456378339 erg4rgh 3 grwgwrt38";
-	c = '3';
-	array = ft_split(s, c);
-	i = 0;
-	while (array[i])
+	char	**test;
+	
+	(void)argc;
+	test = ft_split((char const *)argv[1], *argv[2]);
+	while (test != NULL && *test != NULL)
 	{
-		printf("%s\n", array[i]);
-		free(array[i]);
-		i++;
+		printf ("%s\n", *test);
+		test++;
 	}
+	return (0);
 } */
-
-/* ft_split divide la cadena s en palabras basadas en el carácter
-delimitador c y devuelve un array de punteros a cadenas que
-representan las palabras separadas. */
