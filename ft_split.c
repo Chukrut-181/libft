@@ -6,25 +6,23 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 11:28:23 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/25 14:08:30 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/25 14:28:37 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	**ft_freeall(char ***frags, unsigned int k)
+static char	**ft_freeall(char **frags, unsigned int k)
 {
 	unsigned int	i;
-	char			**tofree;
 
-	tofree = *frags;
 	i = 0;
-	while (i < k && tofree[i])
+	while (i < k && frags[i])
 	{
-		free (tofree[i]);
+		free (frags[i]);
 		i++;
 	}
-	free (tofree);
+	free (frags);
 	return (NULL);
 }
 
@@ -60,12 +58,12 @@ static unsigned int	ft_count_frags(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char			**frag;
+	char			**frags;
 	unsigned int	index;
 	unsigned int	k;
 
-	frag = malloc((ft_count_frags(s, c) + 1) * sizeof(char *));
-	if (!frag)
+	frags = malloc((ft_count_frags(s, c) + 1) * sizeof(char *));
+	if (!frags)
 		return (NULL);
 	index = 0;
 	k = 0;
@@ -73,16 +71,16 @@ char	**ft_split(char const *s, char c)
 		index++;
 	while (s[index])
 	{
-		frag[k] = ft_substr(s, index, ft_wordlen(s + index, c));
-		if (!frag[k])
-			return (ft_freeall(&frag, k));
+		frags[k] = ft_substr(s, index, ft_wordlen(s + index, c));
+		if (!frags[k])
+			return (ft_freeall(frags, k));
 		k++;
 		index = index + ft_wordlen(s + index, c);
 		while (s[index] == c)
 			index++;
 	}
-	frag[k] = NULL;
-	return (frag);
+	frags[k] = NULL;
+	return (frags);
 }
 
 /* int	main(int argc, char **argv)
