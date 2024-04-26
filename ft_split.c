@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 11:28:23 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/25 14:28:37 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/26 17:37:01 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,5 @@ char	**ft_split(char const *s, char c)
 		test++;
 	}
 	return (0);
-} */
+}
+ */
