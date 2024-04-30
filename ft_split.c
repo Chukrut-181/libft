@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 11:28:23 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/29 12:42:10 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/30 11:06:52 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,9 +48,9 @@ static unsigned int	ft_count_frags(const char *s, char c)
 			count++;
 			s++;
 		}
-		while (*s != c)
+		while (*s && *s != c)
 			s++;
-		while (*s == c)
+		while (*s && *s == c)
 			s++;
 	}
 	return (count);
@@ -69,7 +69,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	index = 0;
 	k = 0;
-	while (s[index] == c)
+	while (s[index] && s[index] == c)
 		index++;
 	while (s[index])
 	{
@@ -78,7 +78,7 @@ char	**ft_split(char const *s, char c)
 			return (ft_freeall(frags, k));
 		k++;
 		index = index + ft_wordlen(s + index, c);
-		while (s[index] == c)
+		while (s[index] && s[index] == c)
 			index++;
 	}
 	frags[k] = NULL;
