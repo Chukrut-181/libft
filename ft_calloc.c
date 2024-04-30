@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 10:46:01 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/11 12:45:19 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/29 10:34:07 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_calloc(size_t count, size_t size)
 	s = count * size;
 	dst = malloc(s);
 	if (dst == NULL)
-		return (0);
+		return (NULL);
 	else
 		ft_memset(dst, 0, s);
 	return (dst);

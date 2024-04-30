@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:33:26 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/15 12:58:16 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/29 10:47:16 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,7 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (mark);
 }
+
+/* ft_strchr busca un carácter c en la cadena s y devuelve un puntero
+a su primera ocurrencia si se encuentra.
+Si c no está en s, la función devuelve NULL. */

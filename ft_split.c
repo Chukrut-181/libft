@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 11:28:23 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/26 17:37:01 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/29 12:42:10 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ char	**ft_split(char const *s, char c)
 	unsigned int	index;
 	unsigned int	k;
 
+	if (!s)
+		return (NULL);
 	frags = malloc((ft_count_frags(s, c) + 1) * sizeof(char *));
 	if (!frags)
 		return (NULL);

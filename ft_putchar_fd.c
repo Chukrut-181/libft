@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 12:20:39 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 12:57:53 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/04/29 11:50:39 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,12 @@ void	ft_putchar_fd(char c, int fd)
 		write(fd, &c, 1);
 }
 
-/* int	main(void)
+/* #include <fcntl.h>
+int	main(void)
 {
-	ft_putchar_fd('W', 1);
+	const char *file= "new_docu.txt";
+	int fd = open(file,O_WRONLY);
+	ft_putchar_fd('W', fd);
 	return (0);
 } */
 
