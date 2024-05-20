@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:01:53 by igchurru          #+#    #+#             */
-/*   Updated: 2024/05/20 12:54:14 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/05/20 16:44:24 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,32 +30,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (slen);
 }
 
-int	main(void)
-{
-	char	*d;
-	int		i;
-
-	d = (char *)malloc(20 * 1);
-	if (d == NULL)
-	{
-		write(1, "Memory allocation failed\n", 26);
-		return (0);
-	}
-	i = 0;
-	while (i < 19)
-	{
-		d[i] = 'A';
-		i++;
-	}
-	printf ("String original: %s\n", d);
-	printf ("Valor retornado: %zu\n", ft_strlcpy(d, "123456789", 6));
-	printf ("String final: %s\n", d);
-	free (d);
-	return (0);
-}
-
-/* ft_strlcpy copia src a dst hasta dstsize - 1 caracteres o hasta el final
-de src, lo que ocurra primero. La cadena destino se termina con un carácter
-nulo (\0). La función devuelve la longitud de la cadena fuente (slen) como
-un indicador de cuánto se habría copiado si no hubiera restricciones
-de tamaño. */
+/* ft_strlcpy copies from scr to dst up to (dstsize - 1) characters, or to the
+end of src, whichever happens first. Dst is finished with a null char (\0).
+ft_strlcpy returns the length of src (a.k.a. slen) as an indicator of what
+would have been copied if there were no restrictions. */
