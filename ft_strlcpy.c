@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:01:53 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 15:04:16 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/05/20 12:54:14 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	return (slen);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	char	*d;
 	int		i;
@@ -48,11 +48,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		i++;
 	}
 	printf ("String original: %s\n", d);
-	printf ("Valor retornado: %zu\n", ft_strlcpy(d, "123456789", 3));
+	printf ("Valor retornado: %zu\n", ft_strlcpy(d, "123456789", 6));
 	printf ("String final: %s\n", d);
 	free (d);
 	return (0);
-} */
+}
 
 /* ft_strlcpy copia src a dst hasta dstsize - 1 caracteres o hasta el final
 de src, lo que ocurra primero. La cadena destino se termina con un carácter

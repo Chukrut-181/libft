@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 12:06:48 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 12:44:25 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/05/15 15:19:24 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ int	ft_isalpha(int c)
 	else
 		printf("El caracter NO es alfabético\n");
 	return(0);
-} */
-
+}
+ */
 /* ft_isalpha comprueba si un char es alfabético. */
