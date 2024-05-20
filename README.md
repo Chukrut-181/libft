@@ -5,7 +5,7 @@ It is essential that you do and run your own tests.
 
 Credit to all the people who helped me with this fantastic project, as I had zero
 previous experience with C. Many thanks to my mentor xmatute-, and all my fellow students 
-who helped me. vlorenzo, ilastra-, iziat-hi, otboumeh, iportill, jcordon-, dangonz3,
-and many many others.
+who helped me. vlorenzo, ilastra-, iziat-hi, otboumeh, iportill, jcordon-, oiahidal, 
+dangonz3, and many many others.
 
 Good learning!
