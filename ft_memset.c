@@ -12,6 +12,10 @@
 
 #include "libft.h"
 
+/* Replicates the behavior of the standard library function memset. 
+This function sets the first 'len' bytes of the memory area pointed to by 'b' 
+to the specified byte value 'c'. Returns the original pointer 'b' to the memory
+block, after the bytes have been set. */
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*p;
@@ -26,6 +30,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
-/* ft_memset establece los primeros len bytes del bloque de memoria apuntado
-por b al valor c (convertido a unsigned char).
-La función devuelve b para indicar que el llenado se ha completado. */
