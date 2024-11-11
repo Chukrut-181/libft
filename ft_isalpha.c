@@ -36,3 +36,4 @@ int	ft_isalpha(int c)
 		printf("El caracter NO es alfabético\n");
 	return(0);
 }
+*/
