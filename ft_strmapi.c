@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/*	ft_strmapi:
+		Creates a new string by applying the function 'f' to each character 
+		of the string 's', and passing its index as the first argument to 'f'.
+		The resulting string is returned. The original string 's' is not modified.
+		If either 's' or 'f' is NULL, the function returns NULL.
+	Parameters:
+		s  - The string to which the function 'f' will be applied.
+		f  - A function that takes an unsigned integer (the index) and a 
+		character, and returns a new character.
+	Return:
+		A new string created by applying 'f' to each character of 's'.
+		If 's' or 'f' is NULL, NULL is returned.	*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*fstr;
@@ -31,7 +43,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	fstr[i] = '\0';
 	return (fstr);
 }
-
-/* ft_strmapi aplica la función (f) a cada carácter de la cadena
-de entrada (s) y devuelve una nueva cadena (fstr) que contiene los
-caracteres transformados. */
