@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*	ft_putendl_fd:
+		Writes the string 's' followed by a newline to the given file descriptor 'fd'.
+		If 's' is NULL or if the file descriptor is invalid (negative), no action is taken.
+	Parameters:
+		s  - The string to be written to the file descriptor.
+		fd - The file descriptor where the string and newline will be written.
+	Return:
+		This function does not return a value. If 's' is NULL or 'fd' is invalid,
+		it does nothing.	*/
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (s == NULL || fd < 0)
@@ -25,8 +34,3 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putendl_fd("123456789", 1);
 	return (0);
 } */
-
-/* ft_putendl_fd escribe el carácter c a un archivo o dispositivo identificado
-por el descriptor de archivo fd utilizando la llamada al sistema write() y luego
-añade un salto de línea. Si fd es válido, el carácter se escribe correctamente;
-de lo contrario la función no realiza ninguna acción. */
