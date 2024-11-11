@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/*	ft_strnstr:
+		Locates the first occurrence of the substring 'needle' in the
+		string 'haystack', within the first 'len' characters.
+		If 'needle' is an empty string, the function returns the string
+		'haystack'. If no occurrence of 'needle' is found, it returns NULL.
+	Parameters:
+		haystack  - The string to search within.
+		needle    - The substring to search for.
+		len       - The maximum number of characters to search in 'haystack'.
+	Return:
+		If 'needle' is found in 'haystack', the function returns a pointer
+		to the first occurrence of 'needle' within 'haystack'.
+		If 'needle' is not found or if 'needle' is longer than 'haystack'
+		or 'len', it returns NULL.	*/
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
@@ -41,8 +55,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	printf ("%s\n", ft_strnstr("lorem ipsum dolor sit amet", "ipsumr", 30));
 	return (0);
 } */
-
-/* ft_strnstr busca la subcadena (needle) dentro de la cadena (haystack)
-hasta un máximo de len caracteres de haystack. Si needle se encuentra,
-la función devuelve un puntero a la posición de haystack donde comienza la
-coincidencia. Si no se encuentra, devuelve NULL. */
