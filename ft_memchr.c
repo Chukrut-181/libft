@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/*	ft_memchr:
+		Searches for the first occurrence of the character 'c' in the first 
+		'n' bytes of the memory area pointed to by 's'.
+	Parameters:
+		s - Pointer to the memory area to be searched.
+		c - The character to search for, passed as an int but will be treated
+		as an unsigned char.
+		n - The number of bytes to search.
+	Return:
+		Returns a pointer to the first occurrence of 'c' in the memory area,
+		or NULL if 'c' is not found in the first 'n' bytes.
+	Note:
+		The function treats 'c' as an unsigned char, so the value of 'c' is 
+		converted to unsigned char before comparison.	*/
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
@@ -41,7 +55,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		printf ("Carácter no encontrado\n");
 	return (0);
 } */
-
-/* ft_memchr busca un carácter en una secuencia de bytes
-dentro de una región de memoria, y devuelve un puntero al primer caso encontrado
-o NULL si no lo encuentra. */
