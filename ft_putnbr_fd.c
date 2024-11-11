@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*	ft_putnbr_fd:
+		Writes the integer 'n' to the given file descriptor 'fd'.
+		If the integer is negative, a minus sign is written first,
+		followed by the absolute value. If the integer is the minimum possible
+		value (-2147483648), it is handled as a special case.
+	Parameters:
+		n  - The integer to be written to the file descriptor.
+		fd - The file descriptor where the integer will be written.
+	Return:
+		This function does not return a value.	*/
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == -2147483648)
@@ -36,7 +46,3 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putnbr_fd(0, 1);
 	return (0);
 } */
-
-/* ft_putnbr_fd escribe un número entero n a un archivo o dispositivo
-identificado por el descriptor de archivo fd. Utiliza recursión para
-escribir números enteros con más de un dígito. */
