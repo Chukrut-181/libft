@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*	ft_putchar_fd:
+		Writes the character 'c' to the given file descriptor 'fd'.
+		If the file descriptor is valid, it writes the character to the output
+		associated with that descriptor.
+	Parameters:
+		c  - The character to be written to the file descriptor.
+		fd - The file descriptor where the character will be written.
+	Return:
+		This function does not return a value. If the file descriptor
+		is invalid (negative), no action is taken.	*/
 void	ft_putchar_fd(char c, int fd)
 {
 	if (0 <= fd)
@@ -26,8 +36,3 @@ int	main(void)
 	ft_putchar_fd('W', fd);
 	return (0);
 } */
-
-/* ft_putchar_fd escribe el carácter c a un archivo o dispositivo identificado
-por el descriptor de archivo fd utilizando la llamada al sistema write().
-Si fd es válido, el carácter se escribe correctamente; de lo contrario
-la función no realiza ninguna acción. */
