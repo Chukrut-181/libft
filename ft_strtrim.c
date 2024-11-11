@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/*	ft_strtrim:
+		Removes all characters in the string 's1' that are present in the
+		string 'set' from both the beginning and the end of 's1'.
+		The function returns a new string with the trimmed result.
+		If 's1' or 'set' is NULL, or memory allocation fails,
+		the function returns NULL.
+	Parameters:
+		s1 - The string to be trimmed.
+		set - Set of characters to remove from the beginning and end of 's1'.
+	Return:
+		A new string with the characters from 'set' removed from both ends
+		of 's1', or NULL if an error occurs
+		(e.g., NULL inputs or memory allocation failure).	*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -45,5 +58,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (0);
 } */
 
-/* ft_strtrim elimina los caracteres especificados en set de los extremos de s1
-y devuelve una nueva cadena con el resultado. */
