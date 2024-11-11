@@ -12,6 +12,14 @@
 
 #include "libft.h"
 
+/*	ft_isdigit:
+		Checks if the given character 'c' is a numeric digit. A numeric digit
+		is defined as a character between 0 and 9 in the ASCII character set.
+	Parameters:
+		c - The character to be checked, represented as an integer.
+	Return:
+		Returns 1 if 'c' is a digit ('0'-'9').
+		Returns 0 otherwise.	*/
 int	ft_isdigit(int c)
 {
 	if ('0' <= c && c <= '9')
@@ -27,5 +35,3 @@ int	ft_isdigit(int c)
 		printf ("El carácter NO es un dígito\n");
 	return (0);
 } */
-
-/* ft_isdigit comprueba si un carácter es o no es un dígito. */
