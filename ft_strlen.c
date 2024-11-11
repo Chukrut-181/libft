@@ -17,11 +17,7 @@
 	Parameters:
 		s - The null-terminated string whose length is to be computed.
 	Return:
-		The number of characters in the string, excluding the null terminator.
-	Note:
-	The function iterates through each character in the string until it
-	reaches the null terminator ('\0'), incrementing a counter to keep
-	track of the length.	*/
+		The number of characters in the string.	*/
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
