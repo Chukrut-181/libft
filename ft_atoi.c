@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/*	ft_atoi:
+		Converts the initial portion of the string 'str' to an integer
+		representation.
+	Parameters:
+		str - The string to be converted to an integer.
+	Return:
+		The integer value represented by the initial portion of 'str'.
+		If no valid conversion is found, returns 0.
+	Notes:
+		- The function skips any leading whitespace characters.
+		- If a '+' or '-' sign is present, it is taken into account
+		to determine the sign of the result.
+		- Conversion stops once a non-numeric character is encountered.	*/
 int	ft_atoi(const char *str)
 {
 	int	result;
@@ -49,8 +62,3 @@ int	ft_atoi(const char *str)
 	printf ("\n%d\n\n", result);
 	return (0);
 } */
-
-/* ft_atoi convierte una cadena (de char) que representa un número entero
-(opcionalmente con un signo + ó - y espacios iniciales) en su
-valor entero (int) equivalente, manejando adecuadamente los signos y
-espacios en blanco. */
