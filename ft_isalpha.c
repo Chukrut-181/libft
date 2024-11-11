@@ -12,6 +12,15 @@
 
 #include "libft.h"
 
+/*	ft_isalpha:
+		Checks if the given character 'c' is an alphabetical character.
+		An alphabetical character is defined as a letter (either uppercase
+		or lowercase) in the ASCII character set.
+	Parameters:
+		c - The character to be checked, represented as an integer.
+	Return:
+		Returns 1 if 'c' is an alphabetical character (A-Z or a-z).
+		Returns 0 otherwise.	*/
 int	ft_isalpha(int c)
 {
 	if (('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
@@ -27,5 +36,3 @@ int	ft_isalpha(int c)
 		printf("El caracter NO es alfabético\n");
 	return(0);
 }
- */
-/* ft_isalpha comprueba si un char es alfabético. */
