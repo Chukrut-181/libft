@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/*	ft_isprint:
+		Checks if the given character 'c' is a printable character.
+		Printable characters are those with ASCII values from 32 to 126,
+		which includes letters, digits, punctuation, and the space character.
+	Parameters:
+		c - The character to be checked, represented as an integer.
+	Return:
+		Returns 1 if 'c' is a printable character (ASCII 32-126).
+		Returns 0 otherwise.
+	Note:
+		This function checks if 'c' falls within the range of ASCII values
+		that represent printable characters.	*/
 int	ft_isprint(int c)
 {
 	if (32 <= c && c <= 126)
@@ -27,5 +39,3 @@ int	ft_isprint(int c)
 		printf ("El carácter NO es imprimible\n");
 	return (0);
 } */
-
-/* ft_isprint evalúa si un carácter es imprimible. */
