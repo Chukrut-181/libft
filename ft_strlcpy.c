@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/*	ft_strlcpy:
+		Copies up to 'dstsize - 1' characters from the string 'src' to 'dst', 
+		ensuring the result is null-terminated. It returns the total length of 
+		the string 'src' (not the number of characters copied). If 'dstsize'
+		is smaller than 1, the function does not copy anything and returns the 
+		length of 'src'.
+	Parameters:
+		dst     - The destination string to which 'src' will be copied.
+		src     - The source string that will be copied to 'dst'.
+		dstsize - The size of the 'dst' buffer, including the space for the 
+		null-terminator.
+	Return:
+		The total length of the source string 'src'.
+		If 'dstsize' is smaller than 1, it returns the length of 'src'.	*/
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
@@ -29,8 +43,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (slen);
 }
-
-/* ft_strlcpy copies from scr to dst up to (dstsize - 1) characters, or to the
-end of src, whichever happens first. Dst is finished with a null char (\0).
-ft_strlcpy returns the length of src (a.k.a. slen) as an indicator of what
-would have been copied if there were no restrictions. */
