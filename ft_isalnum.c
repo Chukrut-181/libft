@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/*	ft_isalnum:
+		Checks if the given character 'c' is alphanumeric. An alphanumeric
+		character is either a letter (uppercase or lowercase) or a digit.
+	Parameters:
+		c - The character to be checked, represented as an integer.
+	Return:
+		Returns 1 if 'c' is an alphanumeric character (letter or digit).
+		Returns 0 otherwise.
+	Note:
+		This function relies on two helper functions: ft_isalpha to check 
+		if 'c' is a letter, and ft_isdigit to check if 'c' is a digit. */
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
@@ -27,5 +38,3 @@ int	ft_isalnum(int c)
 		printf("El carácter NO es alfanumérico\n");
 	return (0);
 } */
-
-/* ft_isalnum verifica si un carácter es alfanumérico. */
