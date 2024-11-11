@@ -12,6 +12,23 @@
 
 #include "libft.h"
 
+/*	ft_strlcat:
+		Appends the string 'src' to the end of 'dest' while ensuring that
+		'dest' does not exceed the given size 'dstsize'. The function
+		guarantees that	the result is null-terminated and returns the total
+		length of the string it tried to create (i.e., the initial length of
+		'dest' plus the length of 'src').
+		If 'dstsize' is less than or equal to the length of 'dest', the function
+		returns 'dstsize' plus the length of 'src'.
+	Parameters:
+		dest - The destination string to which 'src' will be appended.
+		src  - The source string that will be appended to 'dest'.
+		dstsize - The size of the destination buffer 'dest'.
+	Return:
+		The total length of the string 'dest' tried to create (i.e., the 
+		initial length of 'dest' plus the length of 'src').
+		If 'dstsize' is too small to hold the full result, the returned value 
+		will be the total length of the concatenated string.	*/
 size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {
 	size_t	dlen;
@@ -60,8 +77,3 @@ size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 	free (test_d);
 	return (0);
 } */
-
-/* ft_strlcat concatena src a dest asegurando que la longitud de dest
-no exceda dstsize - 1 caracteres y añade un carácter nulo (\0) al final
-de dest. Devuelve la longitud combinada de dest y src, incluso si no
-toda la cadena fuente se copió a dest debido a limitaciones de tamaño. */
