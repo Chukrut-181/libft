@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/*	ft_strlen:
+		Computes the length of the string 's' excluding the null terminator.
+	Parameters:
+		s - The null-terminated string whose length is to be computed.
+	Return:
+		The number of characters in the string, excluding the null terminator.
+	Note:
+	The function iterates through each character in the string until it
+	reaches the null terminator ('\0'), incrementing a counter to keep
+	track of the length.	*/
 size_t	ft_strlen(const char *s)
 {
 	size_t	i;
@@ -31,8 +41,3 @@ size_t	ft_strlen(const char *s)
 	printf ("len = %zu\n", len);
 	return (0);
 } */
-
-/* ft_strlen calcula la longitud de la cadena s al recorrer cada carácter
-de la cadena hasta que se encuentra con un carácter nulo (\0), que marca
-el final de la cadena. La longitud se cuenta usando la variable i y se
-devuelve una vez que se completa el recorrido. */
