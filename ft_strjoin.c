@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/*	ft_strjoin:
+		Allocates (with malloc) and returns a new string that is the result
+		of joining 's1' and 's2'. The function creates a new string with enough
+		space to hold both 's1' and 's2', including the null terminator.
+		If either 's1' or 's2' is NULL, the function returns NULL.
+	Parameters:
+		s1 - The first string to concatenate.
+		s2 - The second string to concatenate.
+	Return:
+		A new string containing the concatenation of 's1' and 's2', or NULL 
+		if either 's1' or 's2' is NULL or if memory allocation fails.	*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s3;
@@ -50,8 +61,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	free (test_str);
 	return (0);
 } */
-
-/* ft_strjoin une las dos cadenas s1 y s2 en una nueva cadena, reservando
-memoria para la cadena resultante. Copia s1 y s2 en s3, y agrega un
-carácter nulo al final. Si alguna cadena de entrada es nula o si la
-asignación de memoria falla, la función devuelve NULL. */
