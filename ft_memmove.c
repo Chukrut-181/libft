@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/*	ft_memmove:
+		Copies 'len' bytes from the memory area 'src' to the memory area 'dst'.
+		Unlike `ft_memcpy`, `ft_memmove` handles overlapping memory areas correctly.
+		If the memory areas overlap, the function ensures that data from 'src' 
+		is copied to 'dst' without corrupting any data.
+	Parameters:
+		dst - Pointer to the destination memory area where bytes will be copied.
+		src - Pointer to the source memory area from which bytes will be copied.
+		len - Number of bytes to copy from 'src' to 'dst'.
+	Return:
+		Returns a pointer to the destination memory area 'dst'.
+		If 'src' and 'dst' are the same, it returns 'dst'.	*/
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*ucd;
