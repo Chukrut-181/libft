@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/*	ft_strrchr:
+		Locates the last occurrence of the character 'c' in the string 's'.
+		If 'c' is found in 's', the function returns a pointer to the
+		last occurrence.
+		If 'c' is not found, the function returns NULL.
+		If 'c' is '\0', the function returns a pointer to the null terminator
+		of the string.
+	Parameters:
+		s - The string to search within.
+		c - The character to locate in the string.
+	Return:
+		A pointer to the last occurrence of 'c' in 's'.
+		NULL if 'c' is not found.
+		If 'c' is '\0', it returns a pointer to the null terminator of 's'.	*/
 char	*ft_strrchr(const char *s, int c)
 {
 	char	ch;
@@ -42,8 +56,3 @@ char	*ft_strrchr(const char *s, int c)
 	printf ("Encontrado en: %s\n", test_str);
 	return (0);
 } */
-
-/* ft_strrchr busca la última aparición de un carácter (c) en una cadena (s)
-y devuelve un puntero a la posición donde se encontró la última aparición del
-carácter. Si el carácter no se encuentra, devuelve NULL. Si c es el carácter
-nulo ('\0'), devuelve un puntero al final de s. */
