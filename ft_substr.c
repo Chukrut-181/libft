@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/*	ft_substr:
+		Allocates and returns a substring from the string 's', starting at
+		index 'start' and of length 'len'. If the substring cannot be created
+		(e.g., memory allocation fails), the function returns NULL. If 'start'
+		is greater than the length of 's', an empty string is returned.
+		If 'len' exceeds the length of the string starting at 'start',
+		the substring will be truncated to fit.
+	Parameters:
+		s - The string from which the substring is extracted.
+		start - The index where the substring starts in 's'.
+		len - The maximum length of the substring.
+	Return:
+		A new string containing the substring,
+		or NULL if memory allocation fails.	*/
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
@@ -35,6 +49,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	free (test_str);
 	return (0);
 } */
-
-/* ft_substr extrae una subcadena de s comenzando en start y con una
-longitud de len, devolviendo la subcadena en una nueva cadena de caracteres. */
