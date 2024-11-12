@@ -19,8 +19,7 @@
 	Parameters:
 		c - The character to be checked, represented as an integer.
 	Return:
-		Returns 1 if 'c' is an alphabetical character (A-Z or a-z).
-		Returns 0 otherwise.	*/
+		Returns 1 if 'c' is an alphabetical character, otherwise returns 0.	*/
 int	ft_isalpha(int c)
 {
 	if (('A' <= c && c <= 'Z') || ('a' <= c && c <= 'z'))
