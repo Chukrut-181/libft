@@ -19,10 +19,7 @@
 		c - The character to be checked, represented as an integer.
 	Return:
 		Returns 1 if 'c' is an alphanumeric character (letter or digit).
-		Returns 0 otherwise.
-	Note:
-		This function relies on two helper functions: ft_isalpha to check 
-		if 'c' is a letter, and ft_isdigit to check if 'c' is a digit. */
+		Returns 0 otherwise.	*/
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
