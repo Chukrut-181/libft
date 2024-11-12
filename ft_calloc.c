@@ -22,7 +22,6 @@
 		A pointer to the allocated memory, or NULL if the allocation fails.
 		Each byte of the allocated memory is set to zero.
 	Note:
-		This function mimics the behavior of the standard calloc function.
 		If either 'count' or 'size' is 0, the function still allocates memory,
 		but the size of the allocation will be 0.	*/
 void	*ft_calloc(size_t count, size_t size)
