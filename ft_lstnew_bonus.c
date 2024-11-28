@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 15:09:54 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/23 11:41:24 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:04:21 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,3 @@ t_list	*ft_lstnew(void *content)
 	new_node->next = NULL;
 	return (new_node);
 }
-
-/* ft_lstnew crea un nuevo nodo para una lista enlazada, asigna el
-contenido pasado como argumento a este nodo, inicializa su campo next a NULL
-y devuelve el puntero al nuevo nodo.
-Si la asignación de memoria falla, devuelve NULL. */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/08 15:00:41 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 11:09:11 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 10:59:40 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,3 @@ void	ft_bzero(void *s, size_t n)
 	free(test_str);
 	return (0);
 } */
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 09:48:59 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 12:52:14 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:02:13 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*	ft_memmove:
 		Copies 'len' bytes from the memory area 'src' to the memory area 'dst'.
-		Unlike `ft_memcpy`, `ft_memmove` handles overlapping memory areas correctly.
+		Unlike `ft_memcpy`, `ft_memmove` safely handles overlapping.
 		If the memory areas overlap, the function ensures that data from 'src' 
 		is copied to 'dst' without corrupting any data.
 	Parameters:

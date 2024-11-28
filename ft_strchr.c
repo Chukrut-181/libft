@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:33:26 by igchurru          #+#    #+#             */
-/*   Updated: 2024/11/05 12:36:43 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:04:52 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,9 @@
 		If 'c' is the null terminator, a pointer to the null terminator 
 		in 's' will be returned.
 	Note:
-		The character 'c' is passed as an int, but is treated as an unsigned char.
-		The search is case-sensitive.	*/
+		The character 'c' is passed as an int, but is treated as
+		an unsigned char. The search is case-sensitive.
+*/
 char	*ft_strchr(const char *s, int c)
 {
 	char	ch;

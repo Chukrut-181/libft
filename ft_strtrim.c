@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 10:49:23 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 15:40:27 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:05:07 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	printf ("String trimada: %s\n", test_str);
 	return (0);
 } */
-

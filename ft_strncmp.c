@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:53:42 by igchurru          #+#    #+#             */
-/*   Updated: 2024/11/05 11:11:35 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 10:59:23 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,8 @@
 		- The comparison stops when 'n' characters have been checked
 		or a null character is encountered in either string.
 		- The function converts both 's1' and 's2' to unsigned char pointers 
-		to ensure that characters are compared correctly as unsigned values.	*/
+		to ensure that characters are compared correctly as unsigned values.
+*/
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	unsigned char	*ucs1;

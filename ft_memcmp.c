@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 11:20:20 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 12:21:55 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:00:38 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 /*	ft_memcmp:
 		Compares the first 'n' bytes of memory areas 's1' and 's2'.
 		It compares the bytes of the two memory areas byte-by-byte and returns
-		a result based on the first difference found, or 0 if the areas are equal.
+		a result based on the first difference found,
+		or 0 if the areas are equal.
 	Parameters:
 		s1 - The first memory area to be compared.
 		s2 - The second memory area to be compared.
@@ -53,4 +54,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	printf ("La diferencia es %d\n", diferencia);
 	return (0);
 } */
-

@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:11:42 by igchurru          #+#    #+#             */
-/*   Updated: 2024/05/15 10:37:15 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:04:01 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*	ft_strmapi:
 		Creates a new string by applying the function 'f' to each character 
 		of the string 's', and passing its index as the first argument to 'f'.
-		The resulting string is returned. The original string 's' is not modified.
+		The new string is returned. The original string 's' is not modified.
 		If either 's' or 'f' is NULL, the function returns NULL.
 	Parameters:
 		s  - The string to which the function 'f' will be applied.
