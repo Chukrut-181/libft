@@ -3,15 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 09:47:09 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/30 14:39:40 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:27:58 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*	ft_lstmap:
+		Iterates over the linked list 'lst', applying the function 'f'
+		to the content of each node. Creates a new list by allocating
+		new nodes with the results of 'f'.
+		If memory allocation fails, the function clears the new list
+		and returns NULL.
+	Parameters:
+		lst - 	A pointer to the first node of the linked list.
+		f - 	A function pointer to a function that takes a void pointer
+				as its parameter and returns a new value
+				(to be stored in the new list's node).
+		del - 	A function pointer to a function that will be used to free
+				the content of a node in case of failure.
+	Return:
+		A pointer to the new linked list where each node contains the result
+		of applying 'f' to the corresponding node in 'lst'.
+		NULL if memory allocation fails.
+*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;

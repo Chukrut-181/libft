@@ -1,17 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 15:56:16 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/23 11:51:40 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/11/28 11:18:23 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*	ft_lstlast:
+		Returns the last node of the linked list pointed to by 'lst'.
+		If the list is empty (i.e., 'lst' is NULL), the function returns NULL.
+	Parameters:
+		lst - A pointer to the first node of the linked list.
+	Return:
+		A pointer to the last node of the linked list.
+		NULL if the list is empty.
+*/
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
@@ -20,8 +29,3 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-
-/* ft_lstlast recorre la lista enlazada desde el nodo inicial hasta llegar
-al último nodo (donde lst->next es NULL) y devuelve un puntero a ese nodo.
-Si la lista está vacía (es decir, lst es NULL), la función devuelve NULL
-para indicar que no hay último nodo. */
