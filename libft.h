@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:08:41 by igchurru          #+#    #+#             */
-/*   Updated: 2024/05/16 10:15:34 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/12/04 14:56:48 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 
+//	LIBFT STANDARD FUNCTIONS
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -52,6 +53,8 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
+//	LIBFT BONUS FUNCTIONS
+
 typedef struct s_list
 {
 	void			*content;
@@ -67,5 +70,13 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//	EXPANDED LIBFT FUNCTIONS (Not in subject)
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1024
+# endif
+
+void	ft_free_array(char **array);
+char	*ft_get_next_line(int fd);
 
 #endif
