@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 10:33:26 by igchurru          #+#    #+#             */
-/*   Updated: 2024/11/28 11:04:52 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/12/04 15:29:53 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strchr(const char *s, int c)
 	char	ch;
 	char	*mark;
 
+	if (!s)
+		return (NULL);
 	ch = (char)c;
 	mark = NULL;
 	while (*s)
