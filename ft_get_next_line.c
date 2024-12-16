@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 14:54:06 by igchurru          #+#    #+#             */
-/*   Updated: 2024/12/04 14:58:50 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/12/16 17:01:29 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,17 @@ static char	*ft_trim_storage(char *storage)
 	i = 0;
 	while (storage[i] && storage[i] != '\n')
 		i++;
-	if (!storage[i])
+	if (!storage[i] || storage[i] == EOF)
 	{
 		free (storage);
 		return (NULL);
 	}
 	new_storage = ft_calloc((ft_strlen(storage) - i + 1), sizeof(char));
 	if (!new_storage)
+	{
+		free(storage);
 		return (NULL);
+	}
 	i = i + 1;
 	j = 0;
 	while (storage[i])

@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:08:41 by igchurru          #+#    #+#             */
-/*   Updated: 2024/12/04 14:56:48 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/12/04 15:03:00 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
+# include <fcntl.h>
 
 //	LIBFT STANDARD FUNCTIONS
 int		ft_isalpha(int c);

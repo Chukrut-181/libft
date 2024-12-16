@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: igchurru <igchurru@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 10:06:24 by igchurru          #+#    #+#             */
-/*   Updated: 2024/04/22 15:51:35 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/12/04 15:50:29 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		lens1;
 	int		lens2;
 
-	if (s1 && s2)
+	if (s1 || s2)
 	{
 		lens1 = ft_strlen(s1);
 		lens2 = ft_strlen(s2);
@@ -38,10 +38,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		if (s3 == NULL)
 			return (NULL);
 		i = -1;
-		while (s1[++i])
+		while (s1 && s1[++i])
 			s3[i] = s1[i];
 		i = -1;
-		while (s2[++i])
+		while (s2 && s2[++i])
 		{
 			s3[lens1] = s2[i];
 			lens1++;
