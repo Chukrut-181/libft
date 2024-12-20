@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 14:54:06 by igchurru          #+#    #+#             */
-/*   Updated: 2024/12/16 17:01:29 by igchurru         ###   ########.fr       */
+/*   Updated: 2024/12/20 11:49:17 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,7 @@ char	*ft_get_next_line(int fd)
 		write (1, "Error: Could not open file\n", 27);
 		return (1);
 	}
-	while ((test_str = get_next_line(fd)))
+	while ((test_str = ft_get_next_line(fd)))
 	{
 		printf("Result: %s", test_str);
 		free(test_str);
