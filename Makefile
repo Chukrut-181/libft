@@ -57,7 +57,7 @@ $(NAME) : $(OBJS)
 # $@ represents the target file (the object file).
 $(OBJS_DIR)/%.o : %.c
 	@mkdir -p $(OBJS_DIR)
-	$(CC) $(CCFLAGS) -c -o $@ $<
+	@$(CC) $(CCFLAGS) -c -o $@ $<
 
 # Rule to clean the generated object files and directory.
  # Remove the entire object directory
