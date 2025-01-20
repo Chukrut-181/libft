@@ -59,6 +59,11 @@ $(OBJS_DIR)/%.o : %.c
 	@mkdir -p $(OBJS_DIR)
 	@$(CC) $(CCFLAGS) -c -o $@ $<
 
+# Rule to build the library with fsanitize enabled.
+sanitize: CCFLAGS += -fsanitize=address -g
+sanitize: fclean all
+	@echo "$(GREEN)-> libft.a compiled with fsanitize=address$(RESET)"
+
 # Rule to clean the generated object files and directory.
  # Remove the entire object directory
 # `@` suppresses the command output.
