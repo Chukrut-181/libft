@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/04 14:54:06 by igchurru          #+#    #+#             */
-/*   Updated: 2024/12/20 11:49:17 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/01/20 12:59:25 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static char	*ft_trim_storage(char *storage)
 		free (storage);
 		return (NULL);
 	}
-	new_storage = ft_calloc((ft_strlen(storage) - i + 1), sizeof(char));
+	new_storage = ft_calloc((ft_strlen(storage) - i), sizeof(char));
 	if (!new_storage)
 	{
 		free(storage);
