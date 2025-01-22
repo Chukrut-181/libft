@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:04:00 by igchurru          #+#    #+#             */
-/*   Updated: 2025/01/22 13:06:48 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/01/22 13:21:10 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  * @param array A pointer to a dynamically allocated 2D array of integers.
  * @param rows  The number of rows in the 2D array.
  */
-void	free_int_array(int **array, int rows)
+void	ft_free_int_array(int **array, int rows)
 {
 	int i;
 
