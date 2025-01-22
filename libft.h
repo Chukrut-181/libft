@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:08:41 by igchurru          #+#    #+#             */
-/*   Updated: 2025/01/22 15:37:54 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/01/22 15:40:29 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,6 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 //	LIBFT BONUS FUNCTIONS
-
 typedef struct s_list
 {
 	void			*content;
