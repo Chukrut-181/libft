@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 13:04:00 by igchurru          #+#    #+#             */
-/*   Updated: 2025/01/22 13:21:10 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/01/22 15:38:25 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
  */
 void	ft_free_int_array(int **array, int rows)
 {
-	int i;
+	int	i;
 
 	if (!array)
 		return ;
