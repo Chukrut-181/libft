@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:08:41 by igchurru          #+#    #+#             */
-/*   Updated: 2025/01/22 13:23:32 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/01/22 15:19:41 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,13 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 void	ft_free_array(char **array);
 void	ft_free_int_array(int **array, int rows);
 char	*ft_get_next_line(int fd);
+int		ft_printf(char const *str, ...);
+// static int	ft_discriminate(char d, va_list list, int q);
+// static int	ft_checkpointer(size_t adr, int q);
+int	ft_printchar(char c, int q);
+int	ft_printstr(char *str, int q);
+int	ft_printhex(unsigned long n, int q, char h);
+int	ft_printnbr(int n, int q);
+int	ft_printunsnbr(unsigned int n, int q);
 
 #endif
