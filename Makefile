@@ -50,7 +50,7 @@ all: $(NAME)
 # `ar crs` creates an archive (static library) from the object files.
 $(NAME) : $(OBJS)
 	@ar crs $(NAME) $(OBJS)
-	@echo "$(GREEN)-> libft: libft.a compilation OK$(RESET)"
+	@echo "$(GREEN)-> Libft: libft.a compilation OK$(RESET)"
 
 # Rule to compile a source file into an object file.
 # %.o will match any object file, %.c will match the corresponding source file.
@@ -70,14 +70,14 @@ sani: fclean all
 # `@` suppresses the command output.
 clean:
 	@rm -rf $(OBJS_DIR)
-	@echo "$(YELLOW)-> libft: objects directory removed$(RESET)"
+	@echo "$(YELLOW)-> Libft: objects removed$(RESET)"
 
 # Rule to clean everything including the library.
 # `clean` is called first to remove the object files and directory.
 # Remove the generated library file
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(RED)-> libft: libft.a removed$(RESET)"
+	@echo "$(RED)-> Libft: libft.a removed$(RESET)"
 
 # Rule to rebuild everything from scratch.
 # `fclean` is called first to remove everything and then `all` is called to rebuild.
@@ -88,7 +88,7 @@ re: fclean all
 # `ar crs` will create the final library including the bonus functions.
 bonus: $(OBJS) $(BONUS_OBJS)
 	@ar crs $(NAME) $(OBJS) $(BONUS_OBJS)
-	@echo "$(GREEN)-> libft: libft.a with bonuses compilation OK$(RESET)"
+	@echo "$(GREEN)-> Libft: libft.a with bonuses compilation OK$(RESET)"
 
 # Declares targets that are not actual files.
 # This prevents Make from confusing these names with file names.
