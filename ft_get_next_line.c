@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 12:15:48 by igchurru          #+#    #+#             */
-/*   Updated: 2025/02/07 12:22:22 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/02/07 12:24:57 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ static char	*ft_gnl_strjoin(char *storage, char *buffer)
 	free (storage);
 	return (s3);
 }
+
 static char	*ft_trim_storage(char *storage)
 {
 	char	*new_storage;
