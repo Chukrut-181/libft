@@ -8,7 +8,7 @@ CC = cc
 # -Wall: enables all compiler warning messages.
 # -Wextra: enables extra warning messages.
 # -Werror: treats all warnings as errors to enforce strict code quality.
-CCFLAGS = -Wall -Wextra -Werror
+CCFLAGS = -Wall -Wextra -Werror -g
 
 # List of source files that will be compiled into object files.
 SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
@@ -50,7 +50,7 @@ all: $(NAME)
 # `ar crs` creates an archive (static library) from the object files.
 $(NAME) : $(OBJS)
 	@ar crs $(NAME) $(OBJS)
-	@echo "$(GREEN)-> libft.a compilation OK$(RESET)"
+	@echo "$(GREEN)-> libft: libft.a compilation OK$(RESET)"
 
 # Rule to compile a source file into an object file.
 # %.o will match any object file, %.c will match the corresponding source file.
@@ -61,23 +61,23 @@ $(OBJS_DIR)/%.o : %.c
 	@$(CC) $(CCFLAGS) -c -o $@ $<
 
 # Rule to build the library with fsanitize enabled.
-sanitize: CCFLAGS += -fsanitize=address -g
-sanitize: fclean all
-	@echo "$(GREEN)-> libft.a compiled with fsanitize=address$(RESET)"
+sani: CCFLAGS += -fsanitize=address -g3
+sani: fclean all
+	@echo "$(GREEN)-> (Sanitize flags added)$(RESET)"
 
 # Rule to clean the generated object files and directory.
  # Remove the entire object directory
 # `@` suppresses the command output.
 clean:
 	@rm -rf $(OBJS_DIR)
-	@echo "$(YELLOW)-> All .o files and objects directory removed$(RESET)"
+	@echo "$(YELLOW)-> libft: objects directory removed$(RESET)"
 
 # Rule to clean everything including the library.
 # `clean` is called first to remove the object files and directory.
 # Remove the generated library file
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(RED)-> libft.a removed$(RESET)"
+	@echo "$(RED)-> libft: libft.a removed$(RESET)"
 
 # Rule to rebuild everything from scratch.
 # `fclean` is called first to remove everything and then `all` is called to rebuild.
@@ -88,8 +88,8 @@ re: fclean all
 # `ar crs` will create the final library including the bonus functions.
 bonus: $(OBJS) $(BONUS_OBJS)
 	@ar crs $(NAME) $(OBJS) $(BONUS_OBJS)
-	@echo "$(GREEN)-> libft.a with bonuses compilation OK$(RESET)"
+	@echo "$(GREEN)-> libft: libft.a with bonuses compilation OK$(RESET)"
 
 # Declares targets that are not actual files.
 # This prevents Make from confusing these names with file names.
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re bonus sani
