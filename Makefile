@@ -37,9 +37,9 @@ ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 BONUS_OBJS = $(addprefix $(OBJS_DIR)/, $(BONUS_SRCS:.c=.o))
 
 # ANSI color codes for colored output in the terminal.
-GREEN = \033[1;32m
-RED = \033[1;31m
-YELLOW = \033[1;33m
+GREEN = \033[0;32m
+RED = \033[0;31m
+YELLOW = \033[0;33m
 RESET = \033[0m
 
 # Default target that will be executed if no target is specified.
