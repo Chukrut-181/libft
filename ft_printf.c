@@ -6,11 +6,12 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/22 15:10:02 by igchurru          #+#    #+#             */
-/*   Updated: 2025/02/07 15:27:25 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/02/19 15:19:35 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 static void	ft_checkpointer(size_t adr, int *q)
 {
 	if (!adr)
