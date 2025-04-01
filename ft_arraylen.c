@@ -6,9 +6,11 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 12:14:07 by igchurru          #+#    #+#             */
-/*   Updated: 2025/04/01 12:14:16 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/04/01 12:30:27 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 /**
  * ft_arraylen - 	Calculates the number of elements in a

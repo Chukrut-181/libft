@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:08:41 by igchurru          #+#    #+#             */
-/*   Updated: 2025/04/01 12:14:57 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/04/01 12:30:55 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,6 @@ void	ft_printstr(char *str, int *q);
 void	ft_printhex(unsigned long n, int *q, char h);
 void	ft_printnbr(int n, int *q);
 void	ft_printunsnbr(unsigned int n, int *q);
+float	ft_atof(char *n);
 
 #endif
