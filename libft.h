@@ -6,7 +6,7 @@
 /*   By: igchurru <igchurru@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 12:08:41 by igchurru          #+#    #+#             */
-/*   Updated: 2025/02/07 15:29:44 by igchurru         ###   ########.fr       */
+/*   Updated: 2025/04/01 12:14:57 by igchurru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 # endif
 
 void	ft_free_array(char **array);
+int		ft_arraylen(char **array);
 void	ft_free_int_array(int **array, int rows);
 char	*ft_get_next_line(int fd);
 int		ft_printf(char const *str, ...);
