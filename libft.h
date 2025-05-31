@@ -17,6 +17,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <fcntl.h>
+# include <stdarg.h>
 
 //	LIBFT STANDARD FUNCTIONS
 int		ft_isalpha(int c);
