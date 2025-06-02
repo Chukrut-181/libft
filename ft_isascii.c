@@ -27,5 +27,3 @@ int	ft_isascii(int c)
 		printf ("El carácter NO es ascii\n");
 	return (0);
 } */
-
-/* ft_isascii comprueba si un carácter es ascii. */
