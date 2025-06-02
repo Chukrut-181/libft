@@ -88,5 +88,6 @@ void	ft_printhex(unsigned long n, int *q, char h);
 void	ft_printnbr(int n, int *q);
 void	ft_printunsnbr(unsigned int n, int *q);
 float	ft_atof(char *n);
+int		ft_strcmp(const char *s1, const char *s2);
 
 #endif

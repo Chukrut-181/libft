@@ -19,7 +19,7 @@ ft_atoi.c ft_calloc.c ft_strdup.c ft_substr.c ft_strjoin.c\
 ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c\
 ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c\
 ft_free_array.c ft_free_int_array.c ft_get_next_line.c ft_printf.c\
-ft_printf_utils.c ft_arraylen.c ft_atof.c
+ft_printf_utils.c ft_arraylen.c ft_atof.c ft_strcmp.c
 
 # Directory where all the object files (.o) will be stored.
 OBJS_DIR = Objects
