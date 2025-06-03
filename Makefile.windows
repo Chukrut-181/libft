@@ -1,7 +1,7 @@
 NAME = libft.a
 BONUS_NAME = libft_bonus.a
 
-CC = cc
+CC = gcc
 
 CCFLAGS = -Wall -Wextra -Werror
 
@@ -37,7 +37,7 @@ $(NAME) : $(OBJS)
 	@echo "$(GREEN)-> Libft: libft.a compilation OK$(RESET)"
 
 $(OBJS_DIR)/%.o : %.c
-	@mkdir $(OBJS_DIR)
+	@if not exist "$(OBJS_DIR)" (mkdir "$(OBJS_DIR)")
 	$(CC) $(CCFLAGS) -c -o $@ $<
 
 bonus: $(BONUS_NAME)
@@ -51,15 +51,13 @@ sani: fclean all
 	@echo "$(GREEN)-> (Sanitize flags added)$(RESET)"
 
 clean:
-	@rm -rf $(OBJS_DIR)
+	@if exist "$(OBJS_DIR)" (rmdir /S /Q "$(OBJS_DIR)")
 	@echo "$(YELLOW)-> Libft: objects removed$(RESET)"
 
 fclean: clean
-	@rm -f $(NAME)
+	@if exist "$(NAME)" (del "$(NAME)")
 	@echo "$(RED)-> Libft: libft.a removed$(RESET)"
 
 re: fclean all
-
-rebonus: fclean bonus
 
 .PHONY: all clean fclean re bonus sani
