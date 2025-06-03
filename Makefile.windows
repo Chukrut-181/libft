@@ -43,8 +43,8 @@ $(OBJS_DIR)/%.o : %.c
 bonus: $(BONUS_NAME)
 
 $(BONUS_NAME) : $(OBJS) $(BONUS_OBJS)
-	@ar crs $(NAME) $(OBJS) $(BONUS_OBJS)
-	@echo "$(GREEN)-> Libft: libft.a with bonuses compilation OK$(RESET)"
+	@ar crs $(BONUS_NAME) $(OBJS) $(BONUS_OBJS)
+	@echo "$(GREEN)-> Libft: libft_bonus.a compilation OK$(RESET)"
 
 sani: CCFLAGS += -fsanitize=address -g3
 sani: fclean all
