@@ -56,7 +56,8 @@ clean:
 
 fclean: clean
 	@if exist "$(NAME)" (del "$(NAME)")
-	@echo "$(RED)-> Libft: libft.a removed$(RESET)"
+	@if exist "$(BONUS_NAME)" (del "$(BONUS_NAME)")
+	@echo "$(RED)-> Libft: libft.a and libft_bonus.a removed$(RESET)"
 
 re: fclean all
 
