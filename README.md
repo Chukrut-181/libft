@@ -5,7 +5,7 @@
 Libft is the foundational project of 42 Academy's curriculum, requiring students to recreate essential C standard library functions from scratch. This project serves as an introduction to C programming fundamentals and establishes the technical foundation for all subsequent 42 projects.
 Challenge: Build a custom C library without prior C programming experience, implementing memory management, string manipulation, and linked list operations.
 
-🔧 Key Technical Skills Developed
+🔧 **Key Technical Skills Developed**
 
 - C Programming Fundamentals: Writing efficient, readable C functions following strict coding standards
 - Pointer Arithmetic: Deep understanding of pointer manipulation and dereferencing
@@ -23,7 +23,7 @@ Challenge: Build a custom C library without prior C programming experience, impl
 - Software Engineering Practices: Code organization, documentation, and testing methodologies
 - 42 Methodology: Self-directed learning, peer collaboration, and code review processes
 
-🌱**Personal Growth**
+🌱 **Personal Growth**
 
 - Technical Foundation: Established solid base in C programming.
 - Problem Decomposition: Learned to break complex problems into manageable functions
