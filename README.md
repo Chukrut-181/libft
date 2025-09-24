@@ -7,16 +7,17 @@ Challenge: Build a custom C library without prior C programming experience, impl
 
 This project represents the beginning of my journey in systems programming and established the technical foundation that supports all my subsequent development work at 42 Academy.
 
-🔧 **Key Technical Skills Developed**
+🔧 Key Technical Skills Developed
+
+- C Programming Fundamentals: Writing efficient, readable C functions following strict coding standards
+- Pointer Arithmetic: Deep understanding of pointer manipulation and dereferencing
 - Memory Management Mastery: Dynamic allocation and memory leak prevention
 - Buffer Handling: Safe memory operations with bounds checking
-- Pointer Arithmetic: Deep understanding of pointer manipulation and dereferencing
-- C Programming Fundamentals: Writing efficient, readable C functions following strict coding standards
 - Error Handling: Robust input validation and edge case management
-- Makefile Creation: Automated compilation with proper dependencies and flags
-- Problem-Solving Methodology and testing strategy: Comprehensive testing approach including edge cases and error conditions
 - Algorithm Design: Implementing efficient solutions for string and memory operations
 - Code Optimization: Balancing readability and performance in low-level operations
+- Problem-Solving Methodology and testing strategy: Comprehensive testing approach including edge cases and error conditions
+- Makefile Creation: Automated compilation with proper dependencies and flags
 
 🚀 **Learning Outcomes**
 
