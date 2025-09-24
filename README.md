@@ -7,7 +7,6 @@ Challenge: Build a custom C library without prior C programming experience, impl
 
 This project represents the beginning of my journey in systems programming and established the technical foundation that supports all my subsequent development work at 42 Academy.
 
-
 🔧 **Key Technical Skills Developed**
 - Memory Management Mastery: Dynamic allocation and memory leak prevention
 - Buffer Handling: Safe memory operations with bounds checking
@@ -19,20 +18,17 @@ This project represents the beginning of my journey in systems programming and e
 - Algorithm Design: Implementing efficient solutions for string and memory operations
 - Code Optimization: Balancing readability and performance in low-level operations
 
-
 🚀 **Learning Outcomes**
 
 - Systems Programming: Low-level memory operations and system calls
 - Software Engineering Practices: Code organization, documentation, and testing methodologies
 - 42 Methodology: Self-directed learning, peer collaboration, and code review processes
 
-
 🌱**Personal Growth**
 
 - Technical Foundation: Established solid base in C programming that supports all subsequent 42 projects
 - Problem Decomposition: Learned to break complex problems into manageable functions
 - Quality Standards: Developed attention to detail required for systems-level programming
-
 
 🛠️ **Technical Specifications**
 
@@ -41,7 +37,6 @@ This project represents the beginning of my journey in systems programming and e
 - Code Standard: 42 Norminette compliance
 - Memory Management: Zero memory leaks (Valgrind tested)
 - Testing: Custom test suite + external testers
-
 
 🎓 **Academic Recognition**
 
